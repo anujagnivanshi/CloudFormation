@@ -1,0 +1,12 @@
+AWSTemplateFormationVersion: 2010-09-09
+Description: Basic EC2 Instance
+
+Resources:
+  DevEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageID: ami-ocd3dfa4e37921605
+      InstanceType: t2.micro
+      KeyName: NGINX.pem
+      SecurityGroups:
+        -default
